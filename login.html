@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aivora AI — Access Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="brand-logo">AIVORA AI</a>
+  </nav>
+
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2 id="auth-title">Welcome Back</h2>
+      <p class="auth-subtitle">Access your personal high-intelligence workspace</p>
+
+      <div id="alert-box" class="alert-message"></div>
+
+      <div class="social-auth">
+        <button id="google-btn" class="btn-social" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5c1.6 0 3 .6 4.1 1.6l3.1-3.1C17.3 1.8 14.8 1 12 1 7.5 1 3.7 3.6 1.9 7.3l3.7 2.9C6.5 7.3 9 5 12 5z"/><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.8-2.4 3.7l3.7 2.9c2.2-2 3.7-5 3.7-8.8z"/><path fill="#FBBC05" d="M5.6 14.8c-.2-.7-.4-1.5-.4-2.3s.2-1.6.4-2.3L1.9 7.3C.7 9.7 0 12.3 0 15s.7 5.3 1.9 7.7l3.7-2.9z"/><path fill="#34A853" d="M12 23c3.2 0 6-1.1 8-3l-3.7-2.9c-1.1.7-2.5 1.2-4.3 1.2-3 0-5.5-2.3-6.4-5.2L1.9 16C3.7 19.7 7.5 23 12 23z"/></svg>
+          Continue with Google
+        </button>
+
+        <button id="facebook-btn" class="btn-social" type="button">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Continue with Facebook
+        </button>
+      </div>
+
+      <div class="divider">
+        <span>or email</span>
+      </div>
+
+      <form id="auth-form">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" class="form-control" required placeholder="name@domain.com">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <div class="input-wrapper">
+            <input type="password" id="password" class="form-control" required placeholder="••••••••">
+            <button type="button" id="toggle-password" class="toggle-password">Show</button>
+          </div>
+        </div>
+
+        <div style="text-align: right; margin-bottom: 20px;">
+          <a href="#" id="forgot-btn" style="font-size: 0.75rem; color: var(--gold-antique);">Forgot password?</a>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-primary" style="width:100%;">Sign In</button>
+      </form>
+
+      <div style="text-align: center; margin-top: 24px; font-size: 0.8rem;">
+        <a href="#" id="toggle-auth-mode" style="color: var(--text-beige);">Don't have an account? Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div>&copy; 2026 Aivora AI.</div>
+    <ul class="footer-links">
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-of-service.html">Terms of Service</a></li>
+      <li><a href="data-deletion.html">Data Deletion</a></li>
+    </ul>
+  </footer>
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="auth.js"></script>
+</body>
+</html>
